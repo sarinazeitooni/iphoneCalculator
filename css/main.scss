@@ -1,0 +1,51 @@
+@import "./variables.scss";
+@import "./global.scss";
+.main-container{
+    direction: rtl;
+    width: 280px;
+    background-color: black;
+    color: white;
+    height: 500px;
+    margin: 5px auto;
+    #number-container{
+        direction: ltr;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 65px;
+        color: white;
+        height: 25%;
+    }
+    .button-container{
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-gap: 3px;
+        height: 75%;
+    }
+    .orange-color{
+        font-size: 33px;
+        background-color: $orangecolor;
+        &:active{
+            background-color: lighten($orangecolor,20%);
+        }
+        &:focus{
+            background-color: white;
+            color: $orangecolor;
+        }
+    }
+    .light-gray-color{
+        font-size: 23px;
+        color: black;
+        background-color: $lightgray;
+        &:active{
+            background-color : lighten($lightgray,20%);
+        }
+    }
+    
+    .ziro-button{
+        grid-column:3 / 5;
+        border-radius: 70px;
+        text-align: left;
+        padding-left: 25px;
+    }
+}
